@@ -1477,7 +1477,7 @@ footer {
 }
 
 body.pride {
-  background-image: url(/imagenes/arcoiris.webp);
+  background-image: url(imagenes/arcoiris.webp);
   transition: 0.9s ease all;
   background-size: cover;
   background-repeat: no-repeat;
