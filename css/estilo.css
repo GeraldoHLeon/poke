@@ -1592,7 +1592,7 @@ body.pride #arribaPride {
 }
 /* pokedex */
 #pokedex {
-  background-image: url(/imagenes/pokedexpantalla1.png);
+  background-image: url(../imagenes/pokedexpantalla1.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
