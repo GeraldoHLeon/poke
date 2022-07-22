@@ -501,7 +501,7 @@ a:hover {
   height: auto;
   padding: 0cm 3cm;
   padding-top: 1cm;
-  background-image: url(/imagenes/fondoAyudanos.jpg);
+  background-image: url(../imagenes/fondoAyudanos.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
