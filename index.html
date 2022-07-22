@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Nuestro Centro de Adopciones está siempre abierto a quienes estén buscando un Pokemon para amar y cuidar."/>
+<meta name="keywords" content="pokemon, entrenador, adopcion, pikachu, gimnasio, pueblo paleta, equipo rocket"/>
+<title>Home-CAPO</title>
+<!-- fuente -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+<!-- favicon -->
+<link rel="icon" type="image/png" sizes="32x32" href="./imagenes/favicon-32x32.png">
+<!-- hoja css -->
+<link rel="stylesheet" href="./css/estilo.css"/>
+<!--libreria AOS-->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+<!-- Barra de navegacion-->
+<nav>
+  <div id="contenedorNav">
+    <a href="index.html" id="enlaceLogo">
+      <img src="imagenes/logo1.png" alt="logotipo" id="logo" />
+    </a>
+    <a href="index.html" id="enlaceNombre">
+     <p id="capoNombre">CAPO</p>
+     <p id="capoNombre2">Centro de Adopcion Pokemon</p>
+    </a>
+
+    <ul id="navMenu">
+              <li class="navItems"><a href="#inicio1" >INICIO</a></li>
+              <li class="navItems"><a href="#nosotros" >NOSOTROS</a></li>
+              <li class="navItems"><a href="#nuevo" >!NUEVO¡</a></li>
+              <li class="navItems"><a href="./paginas/adopcion.html"> ESCOGE TU POKEMON</a></li>
+              <li class="navItems"><a href="#ayudanos" >AYUDANOS</a></li>
+              <button id="switch" class="switch">
+                <span class="spanPride">😐</span>
+                <span class="spanPride">🌈</span>
+              </button>
+     </ul>
+  </div>
+</nav>
+
+<!--cuerpo de pagina-->
+<main>
+        <div id="inicio1"></div>
+    <section id="inicio">
+            <h1 id="bienvenido"><span style="color:dodgerblue"> Bienvenido</span> al primer Centro de adopción Pokemon del mundo</h1>
+    </section>
+
+<!--seccion nosotros-->
+    <section id="nosotros">  
+<!--Efecto cuadros-->
+      <div data-aos="zoom-in-right">
+
+
+<div class="contenedorBlanco">
+    <h2 class="subtituloBlanco">¿Quienes somos?</h2>
+    <p class="parrafoBlanco">CAPO es una entidad solidaria creada con el objetivo de ayudar a los Pokemones sin hogar; En CAPO  tenemos un firme compromiso con los Pokemones, ya que nosotros, los humanos, los sacamos de su hábitat original para incorporarlos a nuestras comunidades y ponerlos a nuestro servicio.</p>
+</div>
+
+<div class="contenedorBlanco2">
+    <h2 class="subtituloBlanco">Mision</h2>
+    <p class="parrafoBlanco">Velar por la protección de la fauna Pokemon y Silvestre a través del rescate, albergue, rehabilitación para su posterior adopción. De igual manera buscamos educar y concientizar para crear una cultura de respeto, responsabilidad y cuidado hacia las especies Pokemon.</p>
+</div>
+
+<div class="contenedorBlanco3">
+    <h2 class="subtituloBlanco">Vision</h2>
+    <p class="parrafoBlanco">Ser un albergue integral, modelo a seguir y  así poder replicarse en todos los pueblos. Proporcionando rescate, cuidados, rehabilitación e información que contribuya a una sociedad en armonía con sus Pokemones.</p>
+</div></div>
+</section>
+
+<!--seccion huevos -->    
+        <section id="nuevo">
+            <div id="contenedorHuevos">
+                <img src="imagenes/huev01.png" alt="huevo pokemon" class="huevoPokemon" />
+                <img src="imagenes/huev02.png" alt="huevo pokemon" class="huevoPokemon2" />
+                <img src="imagenes/huev03.png" alt="huevo pokemon" class="huevoPokemon2" />
+                <img src="imagenes/huev04.png" alt="huevo pokemon" class="huevoPokemon" />
+                <img src="imagenes/huev05.png" alt="huevo pokemon" class="huevoPokemon" />
+                <img src="imagenes/huev06.png" alt="huevo pokemon" class="huevoPokemon2" />
+                <img src="imagenes/huev07.png" alt="huevo pokemon" class="huevoPokemon" />
+                <img src="imagenes/huev08.png" alt="huevo pokemon" class="huevoPokemon2" />
+            </div>
+            <h2 id="huevos"><span style="color:#39ca14"> !NEW¡</span> ;Debido a la gran cantidad de huevos Pokemon rescatados en los ultimos meses y a la imposibilidad de incubarlos todos, hemos creado un sistema de adopcion de huevos, con asesoramiento para su cuidado y crianza.</h1>
+                <div id="contenedorHuevos">
+                    <form action="" method="post" enctype="form">
+                        <div class="contenedorForm">
+                            <label for="input1" class="casillaEmail">Quiero informacion</label>
+                            <input type="email" id="input1" placeholder="  Escribe tu correo electronico" class="FormControl" />
+                          <button type="button" id="boton">ENVIAR</button>
+                          <div id="resultado"></div>
+                          </div>
+                    </form>
+                </div>
+            </section>
+
+ <!--Seccion donacion -->
+        <section id="ayudanos">
+   <h3 id="tituloAyuda">Gracias a tu aporte logramos seguir con nuestras tareas, para lograr un futuro libre de maltrato y abandono Pokemon.</h3>    
+            <div class="contenedor">
+                <!-- Tarjeta -->
+                <section class="tarjetaT" id="tarjetaT">
+                  <div class="delantera">
+                    <div class="logo-marca" id="logo-marca">
+                      <!-- <img src="/imagenes/visa.png" alt="visa" /> -->
+                    </div>
+                    <img
+                      src="imagenes/chip-tarjeta.png"
+                      class="chip"
+                      alt="chip de tarjeta"
+                    />
+                    <div class="datos">
+                      <div class="grupo" id="numero">
+                        <p class="label">Número Tarjeta</p>
+                        <p class="numero">#### #### #### ####</p>
+                      </div>
+                      <div class="flexbox">
+                        <div class="grupo" id="nombre">
+                          <p class="label">Nombre Tarjeta</p>
+                          <p class="nombre">Ash Ketchup</p>
+                        </div>
+      
+                        <div class="grupo" id="expiracion">
+                          <p class="label">Expiracion</p>
+                          <p class="expiracion">
+                            <span class="mes">MM</span> / <span class="year">AA</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+      
+                  <div class="trasera">
+                    <div class="barra-magnetica"></div>
+                    <div class="datos">
+                      <div class="grupo" id="firma">
+                        <p class="label">Firma</p>
+                        <div class="firma"><p></p></div>
+                      </div>
+                      <div class="grupo" id="ccv">
+                        <p class="label">CCV</p>
+                        <p class="ccv"></p>
+                      </div>
+                    </div>
+                    <p class="leyenda">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Accusamus exercitationem, voluptates illo.
+                    </p>
+                    <a href="#" class="link-banco">www.PokeBanco.Pok</a>
+                  </div>
+                </section>
+                <div class="contenedor-btn">
+                  <button class="btnAbrir" id="btnAbrir">
+                    <img
+                      class="imagengato"
+                      src="/imagenes/meowth-removebg-preview.png"
+                      style="width: 80px"
+                    />
+                  </button>
+                </div>
+      
+                <!-- Formulario -->
+                <form action="" id="formulario-tarjeta" class="formulario-tarjeta">
+                  <div class="grupo">
+                    <label for="inputNumero">Número Tarjeta</label>
+                    <input
+                      type="text"
+                      id="inputNumero"
+                      maxlength="19"
+                      autocomplete="off"
+                    />
+                  </div>
+                  <div class="grupo">
+                    <label for="inputNombre">Nombre</label>
+                    <input
+                      type="text"
+                      id="inputNombre"
+                      maxlength="19"
+                      autocomplete="off"
+                    />
+                  </div>
+                  <div class="flexbox">
+                    <div class="grupo expira">
+                      <label for="selectMes">Expiracion</label>
+                      <div class="flexbox">
+                        <div class="grupo-select">
+                          <select name="mes" id="selectMes">
+                            <option disabled selected>Mes</option>
+                            <option value="01" class="meses">01</option>
+                            <option value="02" class="meses">02</option>
+                            <option value="03" class="meses">03</option>
+                            <option value="04" class="meses">04</option>
+                            <option value="05" class="meses">05</option>
+                            <option value="06" class="meses">06</option>
+                            <option value="07" class="meses">07</option>
+                            <option value="08" class="meses">08</option>
+                            <option value="09" class="meses">09</option>
+                            <option value="10" class="meses">10</option>
+                            <option value="11" class="meses">11</option>
+                            <option value="12" class="meses">12</option>
+                          </select>
+                        </div>
+                        <div class="grupo-select">
+                          <select name="year" id="selectYear">
+                            <option disabled selected>Año</option>
+                            <option value="22">2022</option>
+                            <option value="23">2023</option>
+                            <option value="24">2024</option>
+                            <option value="25">2025</option>
+                            <option value="26">2026</option>
+                            <option value="27">2027</option>
+                            <option value="28">2028</option>
+                            <option value="29">2029</option>
+                            <option value="30">2030</option>
+                            <option value="31">2031</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="grupo ccv">
+                      <label for="inputCCV">CCV</label>
+                      <input type="text" id="inputCCV" maxlength="3" />
+                    </div>
+                  </div>
+                  <button type="submit" class="btn-enviar">Enviar</button>
+                </form>
+              </div>
+
+            </section>
+        <a href="#contenedorNav">  <div id="contenedorArriba"> <img src="imagenes/arriba.png" alt="Pikachu con globos" id="arriba">
+          <img src="/imagenes/jigglypuffpng.png" alt="jigglypuff" id="arribaPride">
+        </div></a>
+    </main>
+
+     <!-- pie de pagina-->
+     <footer>
+        <div id="Copyright">COPYRIGHT Geraldo Henrriquez ©</div>
+       <a href="/paginas/pokedex.html"> <div id="accedePokedex"> Accede a nuestra Pokedex</div></a>
+       <a href="/paginas/pokedex.html"> <img src="./imagenes/footer.png" alt="slowpoke" id="slowpoke"/></a>
+     </footer>
+
+     <!--Libreria AOS-->
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <script>
+        AOS.init();
+      </script>
+       <!--vinculacion script-->
+    <script src="./js/validacion.js" defer></script>
+    <script src="./js/correoHuevos.js" defer></script>
+    <script src="./js/pride.js" defer></script>
+
+</body>
+</html>

@@ -1,0 +1,1780 @@
+/* reseteo  */
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none !important;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Patrick Hand", cursive;
+  color: whitesmoke;
+}
+
+.swal2-input-label {
+  color: #fc427b;
+}
+
+body {
+  background-color: #f8efba;
+  transition: 0.9s ease all;
+}
+
+/*navbar*/
+nav {
+  background-color: #fc427b;
+  height: 100px;
+  width: 100%;
+  box-shadow: 5px 0 10px #333333;
+  border-bottom: 6px #182c61 solid;
+}
+
+#uva {
+  background-color: #182c61;
+  border-bottom: 6px #fc427b solid;
+}
+
+#logo {
+  width: 80px;
+  margin: 4px;
+  margin-left: 24px;
+  margin-top: 7px;
+  transition: all 0.35s ease;
+}
+
+#logo:hover {
+  transition: all 0.3s ease-in-out 0s;
+  -moz-transform: scale(1.1) rotate(73deg);
+  -webkit-transform: scale(1.1) rotate(73deg);
+  -o-transform: scale(1.1) rotate(73deg);
+  -ms-transform: scale(1.1) rotate(73deg);
+  transform: scale(1.1) rotate(73deg);
+}
+
+#contenedorNav {
+  display: flex;
+  flex-direction: row;
+}
+
+#capoNombre {
+  color: #182c61;
+  font-weight: bold;
+  font-size: 35px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-left: 10px;
+  background-color: transparent;
+  margin-top: 7px;
+}
+
+#capoNombreSecundario {
+  color: #fc427b;
+  font-weight: bold;
+  font-size: 35px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-left: 10px;
+  background-color: transparent;
+  margin-top: 7px;
+}
+
+#capoNombre2 {
+  margin-left: 10px;
+  color: black;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+#capoNombre2Secundario {
+  margin-left: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+#navMenu {
+  background-color: transparent;
+  width: 22cm;
+  display: flex;
+  align-items: flex-end;
+  justify-content: end;
+}
+
+.navItems {
+  margin: 0.7cm 12px;
+  font-size: 24px;
+  font-weight: bold;
+  transition: all 0.35s ease;
+}
+
+.navItems:hover {
+  font-size: 33px;
+  transition: all 0.3s ease-in-out 0s;
+  color: white;
+  background-color: #182c61;
+  margin: 0cm 12px;
+  padding-bottom: 1cm;
+  padding: 10px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+a:hover {
+  color: white;
+}
+
+/*pagina2*/
+.navItems2 {
+  margin: 0.7cm 12px;
+  font-size: 18px;
+  font-weight: bold;
+  transition: all 0.35s ease;
+}
+
+.navItems2:hover {
+  font-size: 35px;
+  transition: all 0.3s ease-in-out 0s;
+  color: black;
+  background-color: #fc427b;
+  margin: 0cm 12px;
+  padding-bottom: 0.7cm;
+  padding: 10px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+a:hover {
+  color: white;
+}
+
+/* icono de ir arriba*/
+#contenedorArriba {
+  background-color: transparent;
+  position: fixed;
+  z-index: 1;
+  top: 77%;
+  left: 90%;
+}
+
+#arriba {
+  width: 120px;
+}
+
+#arribaPride {
+  display: none;
+}
+
+/* secciones */
+
+#inicio {
+  padding-top: 2cm;
+  height: 100vh;
+}
+
+#inicio1 {
+  color: transparent;
+}
+
+#bienvenido {
+  background-color: transparent;
+  color: black;
+  text-align: center;
+  font-size: 50px;
+  margin-top: 4cm;
+  margin-bottom: 10px;
+  -webkit-animation: heartbeat 3.5s ease-in-out infinite both;
+  animation: heartbeat 3.5s ease-in-out infinite both;
+}
+
+@-webkit-keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+    transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+    transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}
+@keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+    transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+    transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}
+#nosotros {
+  height: 100vh;
+  background-image: url(../imagenes/partido-pokemon-papel-pintado-2560x1080_14.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 5px;
+}
+
+.contenedorBlanco {
+  background-color: rgba(255, 255, 255, 0.87);
+  border-radius: 7px;
+  width: 14cm;
+  padding: 12px;
+  margin: 0.5cm 2cm;
+}
+
+.contenedorBlanco2 {
+  background-color: rgba(255, 255, 255, 0.87);
+  border-radius: 7px;
+  width: 14cm;
+  padding: 12px;
+  margin: 0.7cm 9cm;
+}
+
+.contenedorBlanco3 {
+  background-color: rgba(255, 255, 255, 0.87);
+  border-radius: 7px;
+  width: 14cm;
+  padding: 12px;
+  margin: 0.5cm 19cm;
+}
+
+.parrafoBlanco {
+  text-align: justify;
+  font-size: 20px;
+  color: black;
+}
+
+.subtituloBlanco {
+  color: black;
+}
+
+/*SECCION NUEVO*/
+#nuevo {
+  height: 100vh;
+  margin: 2cm 0cm;
+}
+
+#contenedorHuevos {
+  text-align: center;
+}
+
+#huevos {
+  background-color: transparent;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 3cm;
+  margin-bottom: 10px;
+  color: black;
+  padding: 0 2cm;
+}
+
+.huevoPokemon {
+  width: 70px;
+  margin: 2cm 35px;
+  margin-bottom: 0;
+  -webkit-animation: wobble-hor-bottom 2s infinite both;
+  animation: wobble-hor-bottom 2s infinite both;
+}
+@-webkit-keyframes wobble-hor-bottom {
+  0%,
+  100% {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+  }
+  15% {
+    -webkit-transform: translateX(-30px) rotate(-6deg);
+    transform: translateX(-30px) rotate(-6deg);
+  }
+  30% {
+    -webkit-transform: translateX(15px) rotate(6deg);
+    transform: translateX(15px) rotate(6deg);
+  }
+  45% {
+    -webkit-transform: translateX(-15px) rotate(-3.6deg);
+    transform: translateX(-15px) rotate(-3.6deg);
+  }
+  60% {
+    -webkit-transform: translateX(9px) rotate(2.4deg);
+    transform: translateX(9px) rotate(2.4deg);
+  }
+  75% {
+    -webkit-transform: translateX(-6px) rotate(-1.2deg);
+    transform: translateX(-6px) rotate(-1.2deg);
+  }
+}
+@keyframes wobble-hor-bottom {
+  0%,
+  100% {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+  }
+  15% {
+    -webkit-transform: translateX(-30px) rotate(-6deg);
+    transform: translateX(-30px) rotate(-6deg);
+  }
+  30% {
+    -webkit-transform: translateX(15px) rotate(6deg);
+    transform: translateX(15px) rotate(6deg);
+  }
+  45% {
+    -webkit-transform: translateX(-15px) rotate(-3.6deg);
+    transform: translateX(-15px) rotate(-3.6deg);
+  }
+  60% {
+    -webkit-transform: translateX(9px) rotate(2.4deg);
+    transform: translateX(9px) rotate(2.4deg);
+  }
+  75% {
+    -webkit-transform: translateX(-6px) rotate(-1.2deg);
+    transform: translateX(-6px) rotate(-1.2deg);
+  }
+}
+
+.huevoPokemon2 {
+  width: 70px;
+  margin: 2cm 35px;
+  margin-bottom: 0;
+  -webkit-animation: wobble-hor-bottom 0.9s 0.5s infinite both;
+  animation: wobble-hor-bottom 0.9s 0.5s infinite both;
+}
+
+@-webkit-keyframes wobble-hor-bottom {
+  0%,
+  100% {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+  }
+  15% {
+    -webkit-transform: translateX(-30px) rotate(-6deg);
+    transform: translateX(-30px) rotate(-6deg);
+  }
+  30% {
+    -webkit-transform: translateX(15px) rotate(6deg);
+    transform: translateX(15px) rotate(6deg);
+  }
+  45% {
+    -webkit-transform: translateX(-15px) rotate(-3.6deg);
+    transform: translateX(-15px) rotate(-3.6deg);
+  }
+  60% {
+    -webkit-transform: translateX(9px) rotate(2.4deg);
+    transform: translateX(9px) rotate(2.4deg);
+  }
+  75% {
+    -webkit-transform: translateX(-6px) rotate(-1.2deg);
+    transform: translateX(-6px) rotate(-1.2deg);
+  }
+}
+@keyframes wobble-hor-bottom {
+  0%,
+  100% {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+  }
+  15% {
+    -webkit-transform: translateX(-30px) rotate(-6deg);
+    transform: translateX(-30px) rotate(-6deg);
+  }
+  30% {
+    -webkit-transform: translateX(15px) rotate(6deg);
+    transform: translateX(15px) rotate(6deg);
+  }
+  45% {
+    -webkit-transform: translateX(-15px) rotate(-3.6deg);
+    transform: translateX(-15px) rotate(-3.6deg);
+  }
+  60% {
+    -webkit-transform: translateX(9px) rotate(2.4deg);
+    transform: translateX(9px) rotate(2.4deg);
+  }
+  75% {
+    -webkit-transform: translateX(-6px) rotate(-1.2deg);
+    transform: translateX(-6px) rotate(-1.2deg);
+  }
+}
+#boton {
+  margin: 0.5cm auto;
+  padding: 5px;
+  box-shadow: inset 0px 1px 0px 0px #f7c5c0;
+  background: linear-gradient(to bottom, #fc8d83 5%, #e4685d 100%);
+  background-color: #fc8d83;
+  border-radius: 6px;
+  border: 1px solid #d83526;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #b23e35;
+  margin-bottom: 1cm;
+}
+
+#boton:hover {
+  background: linear-gradient(to bottom, #e4685d 5%, #fc8d83 100%);
+  background-color: #e4685d;
+}
+
+#boton:active {
+  position: relative;
+  top: 1px;
+}
+
+.contenedorForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#input1 {
+  width: 40%;
+  color: black;
+}
+
+.casillaEmail {
+  font-size: 25px;
+  margin-top: 1cm;
+  color: #fc427b;
+}
+
+#resultado {
+  text-align: center;
+  font-size: 20px;
+  color: black;
+}
+
+#ayudanos {
+  height: auto;
+  padding: 0cm 3cm;
+  padding-top: 1cm;
+  background-image: url(/imagenes/fondoAyudanos.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#tituloAyuda {
+  margin-top: 1cm;
+  color: black;
+  text-align: center;
+  font-size: 28px;
+}
+
+/*tarjeta de donacion inicio-------------------------*/
+.contenedor {
+  width: 90%;
+  max-width: 1000px;
+  padding: 40px 20px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*Estilos de tarjetas */
+.tarjetaT {
+  width: 100%;
+  max-width: 550px;
+  position: relative;
+  color: white;
+  transition: 0.3s ease all;
+  transform: rotateY(0deg);
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  cursor: pointer;
+  z-index: 2;
+}
+.tarjetaT:active {
+  transform: rotateY(180deg);
+}
+
+.tarjetaT > div {
+  padding: 30px;
+  border-radius: 15px;
+  min-height: 315px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 10px 10px rgba(90, 116, 148, 0.3);
+}
+/*----------------tarjeta delantera--------------*/
+.tarjetaT .delantera {
+  width: 100%;
+  background-image: url(../imagenes/fonto\ tarjeta\ debito.jpg);
+  background-size: cover;
+}
+.delantera .logo-marca {
+  text-align: right;
+  min-height: 50px;
+}
+.delantera .logo-marca img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  max-width: 80px;
+}
+.delantera .chip {
+  width: 100%;
+  max-width: 50px;
+  margin-bottom: 20px;
+}
+.delantera .grupo .label {
+  font-size: 17px;
+  color: black;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.delantera .grupo .numero,
+.delantera .grupo .nombre,
+.delantera .grupo .expiracion {
+  color: #fff;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+.delantera .flexbox {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.trasera {
+  background-image: url(/imagenes/arcanine2.png);
+  position: absolute;
+  background-size: cover;
+  top: 0;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+}
+
+.trasera .barra-magnetica {
+  height: 40px;
+  background-color: black;
+  width: 100%;
+  position: absolute;
+  top: 30px;
+  left: 0;
+}
+.trasera .datos {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+.trasera .datos p {
+  margin-bottom: 5px;
+}
+.trasera .datos #firma {
+  width: 70%;
+}
+
+.trasera .datos #firma .firma {
+  height: 40px;
+  background: repeating-linear-gradient(
+    skyblue 0,
+    skyblue 5px,
+    orange 5px,
+    orange 10px
+  );
+}
+
+.firma {
+  line-height: 40px;
+  font-family: "Liu Jian Mao Cao", cursive;
+  color: black;
+  font-size: 30px;
+  padding: 0 10px;
+  text-transform: capitalize;
+}
+.trasera .datos #ccv {
+  width: 20%;
+}
+.trasera .datos #ccv .ccv {
+  background: white;
+  height: 40px;
+  color: black;
+  padding: 10px;
+  text-align: center;
+}
+.trasera .leyenda {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.trasera .link-banco {
+  font-size: 14px;
+  color: white;
+}
+
+/*contenedor boton*/
+
+.contenedor-btn .btnAbrir {
+  width: 80px;
+  background-color: transparent;
+  height: 80px;
+  font-size: 20px;
+  line-height: 20px;
+  color: transparent;
+  position: relative;
+  top: -25px;
+  z-index: 3;
+  border: none;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.contenedor-btn .btnAbrir:hover {
+  background-color: rgb(255, 161, 21);
+  border-radius: 100%;
+}
+
+/* formulario tarjeta */
+
+.formulario-tarjeta {
+  background-color: rgb(255, 130, 130);
+  width: 100%;
+  padding: 150px 30px 30px 30px;
+  max-width: 700px;
+  border-radius: 10px;
+  position: relative;
+  top: -150px;
+  z-index: 1;
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  transition: 0.3s ease-out;
+}
+.formulario-tarjetaT {
+  background-color: rgb(255, 130, 130);
+  width: 100%;
+  padding: 150px 30px 30px 30px;
+  max-width: 700px;
+  border-radius: 10px;
+  position: relative;
+  top: -150px;
+  z-index: 1;
+  transition: 0.3s ease-out;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.formulario-tarjetaT label {
+  display: block;
+  color: black;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.formulario-tarjetaT input,
+.formulario-tarjetaT select,
+.btn.enviar {
+  border: 2px solid #ced6e0;
+  font-size: 18px;
+  height: 50px;
+  width: 100%;
+  padding: 5px 12px;
+  transition: 0.3s ease all;
+  border-radius: 5px;
+  color: black;
+}
+.formulario-tarjetaT input:hover,
+.formulario-tarjetaT select:hover {
+  border: 3px solid #93bded;
+  outline: rgb (4, 4, 4);
+  box-shadow: 1px 7px 10px -5px yellow;
+}
+
+.formulario-tarjetaT input {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.formulario-tarjetaT .flexbox {
+  display: flex;
+  justify-content: space-between;
+}
+.formulario-tarjetaT .expira {
+  width: 100%;
+}
+
+.formulario-tarjetaT .ccv {
+  min-width: 100px;
+}
+.formulario-tarjetaT .grupo-select {
+  width: 100%;
+  margin-right: 15px;
+}
+
+.formulario-tarjetaT .btn-enviar {
+  border: none;
+  padding: 10px;
+  font-size: 22px;
+  color: pink;
+  background-color: #120450;
+  box-shadow: 2px 2px 10px 0px;
+  cursor: pointer;
+}
+
+.formulario-tarjetaT .btn-enviar:hover {
+  color: rgb(255, 131, 152);
+}
+
+.grupo-select {
+  color: black;
+}
+#numero {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+#nombre {
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/*tarjeta de donacion final-------------------------*/
+
+#catalogo {
+  height: auto;
+  display: grid;
+  grid-template-columns: 34% 33% 33%;
+  gap: 34px;
+  margin: 35px 40px;
+}
+#test {
+  height: 100vh;
+  background-color: #ffffff;
+  opacity: 0.7;
+  background-image: radial-gradient(circle at center center, #ff58e0, #ffffff),
+    repeating-radial-gradient(
+      circle at center center,
+      #ff58e0,
+      #ff58e0,
+      18px,
+      transparent 36px,
+      transparent 18px
+    );
+  background-blend-mode: multiply;
+}
+/* footer */
+
+footer {
+  background-color: #182c61;
+  height: 82px;
+  width: 100%;
+
+  bottom: 0%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+#footer2 {
+  background-color: #fc427b;
+  height: 82px;
+  width: 100%;
+  bottom: 0%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+#slowpoke {
+  width: 80px;
+  margin-right: 3cm;
+  padding-bottom: 6px;
+}
+
+#Copyright {
+  color: white;
+  margin: 10px;
+  padding-top: 10px;
+}
+
+/* carta pokemon*/
+.tarjeta {
+  background-color: #2c302d;
+  display: flex;
+  flex-direction: row;
+  height: 5cm;
+  width: 9cm;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: -9px 14px 14px 3px rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: -9px 14px 14px 3px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: -9px 14px 14px 3px rgba(0, 0, 0, 0.7);
+  transition: 0.3s all ease-in-out;
+}
+
+.ladoInfo {
+  background-color: black;
+  width: 5cm;
+  padding: 6px;
+  padding-top: 50px;
+  text-align: center;
+}
+.nombrePokemon {
+  text-transform: uppercase;
+  font-size: 20px;
+  margin: 10px auto;
+  font-weight: bold;
+}
+.ladoImagen {
+  background-image: url(../imagenes/fondoPokemon.jpg);
+  background-size: cover;
+  width: 100%;
+}
+
+.imagenPokemon {
+  width: 5cm;
+  overflow: hidden;
+}
+
+/* carta mayor */
+.card {
+  position: relative;
+  width: 9cm;
+  height: 5cm;
+  border-radius: 10px;
+  background-color: transparent;
+  z-index: 0;
+}
+.faceFront {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.5s;
+  transform: perspective(600px) rotateY(0deg);
+  box-shadow: 0 5px 10px black;
+}
+.faceBack {
+  background-color: #a3cb38;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.5s;
+  transform: perspective(600px) rotateY(0deg);
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  opacity: 0;
+}
+
+.descripcionPokemon {
+  color: black;
+  font-size: 17px;
+  text-align: center;
+  line-height: 16px;
+}
+.botonAdoptar {
+  width: 3cm;
+  margin: 10px auto;
+  text-decoration: none;
+  text-align: center;
+  padding: 1px 5px;
+  border: solid 1px #ffffff;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  font-size: 15px;
+  color: #e5ffff;
+  background-color: #fc427a;
+  background-image: -moz-linear-gradient(top, #fc427a 0%, #d1003f 100%);
+  box-shadow: 0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;
+}
+.botonAdoptar:hover {
+  box-shadow: 0px 0px 2px #bababa, inset 0px 0px 6px #ffffff;
+}
+.botonAdoptar:active {
+  opacity: 0.83;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=83);
+  filter: alpha(opacity=83);
+}
+
+.tarjeta:hover {
+  opacity: 0;
+}
+.faceBack:hover {
+  backface-visibility: visible;
+  opacity: 1;
+}
+
+/*Elementos*/
+.bicho {
+  box-shadow: inset 0px 1px 0px 0px #d9fbbe;
+  background: linear-gradient(to bottom, #b8e356 5%, #a5cc52 100%);
+  background-color: #b8e356;
+  border-radius: 50px;
+  border: 1px solid #83c41a;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 11px;
+  font-weight: lighter;
+  padding: 0px 10px;
+  text-shadow: 0px 1px 0px #86ae47;
+  margin: 4px 0;
+  text-transform: uppercase;
+}
+.veneno {
+  box-shadow: inset 0px 1px 0px 0px #d9fbbe;
+  background: linear-gradient(to bottom, #690069 5%, #b602b6 100%);
+  background-color: #690069;
+  border-radius: 50px;
+  border: 1px solid #440144;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 11px;
+  font-weight: lighter;
+  padding: 0px 10px;
+  text-shadow: 0px 1px 0px #721c72;
+  text-transform: uppercase;
+}
+.acero {
+  box-shadow: inset 0px 1px 0px 0px #d9fbbe;
+  background: linear-gradient(to bottom, #707070 5%, #acacac 100%);
+  background-color: #707070;
+  border-radius: 50px;
+  border: 1px solid #3f3f3f;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 11px;
+  font-weight: lighter;
+  padding: 0px 10px;
+  text-shadow: 0px 1px 0px #8b8b8b;
+  text-transform: uppercase;
+}
+.agua {
+  box-shadow: inset 0px 1px 0px 0px #d9fbbe;
+  background: linear-gradient(to bottom, #1c6bff 5%, #6b9fff 100%);
+  background-color: #1c6bff;
+  border-radius: 50px;
+  border: 1px solid #1246a7;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 11px;
+  font-weight: lighter;
+  padding: 0px 10px;
+  text-shadow: 0px 1px 0px #2b59af;
+  text-transform: uppercase;
+}
+.dragon {
+  box-shadow: inset 0px 1px 0px 0px #d9fbbe;
+  background: linear-gradient(to bottom, #4a1b70 5%, #784e9b 100%);
+  background-color: #4a1b70;
+  border-radius: 50px;
+  border: 1px solid #440144;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 11px;
+  font-weight: lighter;
+  padding: 0px 10px;
+  text-shadow: 0px 1px 0px #5a4070;
+  text-transform: uppercase;
+}
+.electrico {
+  box-shadow: inset 0px 1px 0px 0px #d9fbbe;
+  background: linear-gradient(to bottom, #ffe710 5%, #f3e45b 100%);
+  background-color: #ffe710;
+  border-radius: 50px;
+  border: 1px solid #e0ca00;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 11px;
+  font-weight: lighter;
+  padding: 0px 10px;
+  text-shadow: 0px 1px 0px #ffed4a;
+  text-transform: uppercase;
+}
+.fantasma {
+  box-shadow: inset 0px 1px 0px 0px #d9fbbe;
+  background: linear-gradient(to bottom, #46335f 5%, #74618d 100%);
+  background-color: #46335f;
+  border-radius: 50px;
+  border: 1px solid #2e1b47;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 11px;
+  font-weight: lighter;
+  padding: 0px 10px;
+  text-shadow: 0px 1px 0px #472674;
+  text-transform: uppercase;
+}
+.fuego {
+  box-shadow: inset 0px 1px 0px 0px #d9fbbe;
+  background: linear-gradient(to bottom, #ff0000 5%, #ff6a6a 100%);
+  background-color: #ff0000;
+  border-radius: 50px;
+  border: 1px solid #be0000;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 11px;
+  font-weight: lighter;
+  padding: 0px 10px;
+  text-shadow: 0px 1px 0px #e43434;
+  text-transform: uppercase;
+}
+.hada {
+  box-shadow: inset 0px 1px 0px 0px #d9fbbe;
+  background: linear-gradient(to bottom, #ffb8d9 5%, #ffe2ef 100%);
+  background-color: #ffb8d9;
+  border-radius: 50px;
+  border: 1px solid #ff9dcb;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 11px;
+  font-weight: lighter;
+  padding: 0px 10px;
+  text-shadow: 0px 1px 0px #f1a4c8;
+  text-transform: uppercase;
+}
+.hielo {
+  box-shadow: inset 0px 1px 0px 0px #d9fbbe;
+  background: linear-gradient(to bottom, #36fff5 5%, #66bbb7 100%);
+  background-color: #36fff5;
+  border-radius: 50px;
+  border: 1px solid #00e9dd;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 11px;
+  font-weight: lighter;
+  padding: 0px 10px;
+  text-shadow: 0px 1px 0px #23eee4;
+  text-transform: uppercase;
+}
+.lucha {
+  box-shadow: inset 0px 1px 0px 0px #d9fbbe;
+  background: linear-gradient(to bottom, #7c1212 5%, #bd2424 100%);
+  background-color: #7c1212;
+  border-radius: 50px;
+  border: 1px solid #610808;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 11px;
+  font-weight: lighter;
+  padding: 0px 10px;
+  text-shadow: 0px 1px 0px #c21010;
+  text-transform: uppercase;
+}
+.planta {
+  box-shadow: inset 0px 1px 0px 0px #d9fbbe;
+  background: linear-gradient(to bottom, #16c000 5%, #65ff51 100%);
+  background-color: #16c000;
+  border-radius: 50px;
+  border: 1px solid #0f8500;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 11px;
+  font-weight: lighter;
+  padding: 0px 10px;
+  text-shadow: 0px 1px 0px #25b113;
+  text-transform: uppercase;
+}
+.normal {
+  box-shadow: inset 0px 1px 0px 0px #d9fbbe;
+  background: linear-gradient(to bottom, #c0c0c0 5%, #aaaaaa 100%);
+  background-color: #c0c0c0;
+  border-radius: 50px;
+  border: 1px solid #707070;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 11px;
+  font-weight: lighter;
+  padding: 0px 10px;
+  text-shadow: 0px 1px 0px #5f5858;
+  text-transform: uppercase;
+}
+.psiquico {
+  box-shadow: inset 0px 1px 0px 0px #d9fbbe;
+  background: linear-gradient(to bottom, #f500b8 5%, #f856d0 100%);
+  background-color: #f500b8;
+  border-radius: 50px;
+  border: 1px solid #bb008c;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 11px;
+  font-weight: lighter;
+  padding: 0px 10px;
+  text-shadow: 0px 1px 0px #da00a3;
+  text-transform: uppercase;
+}
+.roca {
+  box-shadow: inset 0px 1px 0px 0px #d9fbbe;
+  background: linear-gradient(to bottom, #e2b10d 5%, #ffe17e 100%);
+  background-color: #e2b10d;
+  border-radius: 50px;
+  border: 1px solid #a78000;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 11px;
+  font-weight: lighter;
+  padding: 0px 10px;
+  text-shadow: 0px 1px 0px #daaf22;
+  text-transform: uppercase;
+}
+.siniestro {
+  box-shadow: inset 0px 1px 0px 0px #d9fbbe;
+  background: linear-gradient(to bottom, #4b3c27 5%, #6d6458 100%);
+  background-color: #4b3c27;
+  border-radius: 50px;
+  border: 1px solid #33291a;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 11px;
+  font-weight: lighter;
+  padding: 0px 10px;
+  text-shadow: 0px 1px 0px #473721;
+  text-transform: uppercase;
+}
+.tierra {
+  box-shadow: inset 0px 1px 0px 0px #d9fbbe;
+  background: linear-gradient(to bottom, #690069 5%, #b602b6 100%);
+  background-color: #690069;
+  border-radius: 50px;
+  border: 1px solid #440144;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 11px;
+  font-weight: lighter;
+  padding: 0px 10px;
+  text-shadow: 0px 1px 0px #721c72;
+  text-transform: uppercase;
+}
+.volador {
+  box-shadow: inset 0px 1px 0px 0px #d9fbbe;
+  background: linear-gradient(to bottom, #70a4bd 5%, #98cfe9 100%);
+  background-color: #70a4bd;
+  border-radius: 50px;
+  border: 1px solid #558499;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 11px;
+  font-weight: lighter;
+  padding: 0px 10px;
+  text-shadow: 0px 1px 0px #68bee6;
+  text-transform: uppercase;
+}
+
+/*inicio pagina test */
+
+#test {
+  height: 100vh;
+  background-color: #ffffff;
+  opacity: 1;
+  background-image: radial-gradient(circle at center center, #ff58e0, #ffffff),
+    repeating-radial-gradient(
+      circle at center center,
+      #ff58e0,
+      #ff58e0,
+      18px,
+      transparent 36px,
+      transparent 18px
+    );
+  background-blend-mode: multiply;
+}
+.resultadoTest {
+  text-align: center;
+  padding-top: 3cm;
+}
+.nombreMoneda {
+  font-size: 65px;
+  color: black;
+}
+.pokemonRecomendado {
+  font-size: 52px;
+  color: white;
+  text-align: center;
+}
+
+.poke2D {
+  border-radius: 125px;
+  border: 7px solid #fc427b;
+  box-shadow: -1px 11px 8px 1px rgba(0, 0, 0, 0.59);
+  -webkit-box-shadow: -1px 11px 8px 1px rgba(0, 0, 0, 0.59);
+  -moz-box-shadow: -1px 11px 8px 1px rgba(0, 0, 0, 0.59);
+  -webkit-animation: heartbeat 1.3s ease-in-out infinite;
+  animation: heartbeat 1.3s ease-in-out infinite;
+}
+
+@-webkit-keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+    transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+    transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}
+@keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+    transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+    transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}
+
+.cartaSeleccionada1 {
+  display: none;
+}
+.cartaSeleccionada2 {
+  display: none;
+}
+.cartaSeleccionada3 {
+  display: none;
+}
+.cartaSeleccionada4 {
+  display: none;
+}
+.cartaSeleccionada5 {
+  display: none;
+}
+.cartaSeleccionada6 {
+  display: none;
+}
+.cartaSeleccionada7 {
+  display: none;
+}
+.cartaSeleccionada7 {
+  display: none;
+}
+.cartaSeleccionada8 {
+  display: none;
+}
+.cartaSeleccionada9 {
+  display: none;
+}
+.cartaSeleccionada10 {
+  display: none;
+}
+.cartaSeleccionada11 {
+  display: none;
+}
+.cartaSeleccionada12 {
+  display: none;
+}
+.cartaSeleccionada13 {
+  display: none;
+}
+.cartaSeleccionada14 {
+  display: none;
+}
+.cartaSeleccionada15 {
+  display: none;
+}
+.cartaSeleccionada16 {
+  display: none;
+}
+.cartaSeleccionada17 {
+  display: none;
+}
+.cartaSeleccionada18 {
+  display: none;
+}
+.cartaSeleccionadaKakuna {
+  background-color: transparent;
+}
+.cartaSeleccionadaPikachu {
+  background-color: transparent;
+}
+.cartaSeleccionadaChimchar {
+  background-color: transparent;
+}
+.cartaSeleccionadaLuxray {
+  background-color: transparent;
+}
+.cartaSeleccionadaUmbreon {
+  background-color: transparent;
+}
+.cartaSeleccionadaBronzong {
+  background-color: transparent;
+}
+.cartaSeleccionadaChespin {
+  background-color: transparent;
+}
+.cartaSeleccionadaChimecho {
+  background-color: transparent;
+}
+.cartaSeleccionadaBibarel {
+  background-color: transparent;
+}
+.cartaSeleccionadaSlowpoke {
+  background-color: transparent;
+}
+.cartaSeleccionadaThroh {
+  background-color: transparent;
+}
+.cartaSeleccionadaSnover {
+  background-color: transparent;
+}
+.cartaSeleccionadaPiloswine {
+  background-color: transparent;
+}
+.cartaSeleccionadaStantler {
+  background-color: transparent;
+}
+.cartaSeleccionadaSandile {
+  background-color: transparent;
+}
+.cartaSeleccionadaVolcarona {
+  background-color: transparent;
+}
+.cartaSeleccionadaSwampert {
+  background-color: transparent;
+}
+.cartaSeleccionadaGrumpig {
+  background-color: transparent;
+}
+/* pagina test  final*/
+
+/*modo Pride*/
+
+.switch {
+  background: #182c61;
+  border-radius: 1000px;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  outline: none;
+  margin-bottom: 28px;
+  margin-left: 30px;
+}
+.switch::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background-color: whitesmoke;
+  top: 0;
+  left: 0;
+  right: unset;
+  border-radius: 100px;
+  transition: 0.3s ease all;
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+.switch.active {
+  background-color: orange;
+}
+.switch.active::after {
+  left: unset;
+  right: 0;
+}
+
+.spanPride {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  display: block;
+  background: none;
+}
+
+body.pride {
+  background-image: url(/imagenes/arcoiris.webp);
+  transition: 0.9s ease all;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+body.pride nav {
+  border-bottom: 6px white solid;
+  background-image: linear-gradient(
+    to right,
+    orangered,
+    orange,
+    gold,
+    lightgreen,
+    cyan,
+    dodgerblue,
+    mediumpurple,
+    hotpink,
+    orangered
+  );
+  animation: sliding 30s linear infinite;
+}
+
+@keyframes sliding {
+  to {
+    background-position: -2000vw;
+  }
+}
+
+body.pride .navItems:hover {
+  background-color: white;
+}
+
+body.pride a:hover {
+  color: black;
+}
+
+body.pride #bienvenido {
+  color: white;
+}
+body.pride #nosotros {
+  background-image: none;
+}
+body.pride #huevos {
+  color: white;
+}
+
+body.pride #ayudanos {
+  background-image: none;
+}
+
+body.pride footer {
+  background-image: linear-gradient(
+    to right,
+    rgb(39, 204, 234),
+    hotpink,
+    white,
+    hotpink,
+    rgb(39, 204, 234)
+  );
+  animation: sliding 30s linear infinite;
+}
+
+@keyframes sliding {
+  to {
+    background-position: -2000vw;
+  }
+}
+
+body.pride #arriba {
+  display: none;
+}
+body.pride #arribaPride {
+  display: flex;
+  width: 100px;
+}
+.container {
+  width: 700px;
+  max-width: 80%;
+  background-color: transparent;
+  padding: 15px;
+  border-radius: 5px;
+  margin-left: 8.5cm;
+  margin-top: 5cm;
+  position: absolute;
+}
+
+.btn-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  gap: 13px;
+  margin-top: 20px;
+}
+
+.btn {
+  height: 2cm;
+  background-color: #ff69b4;
+  border: 3px solid #182c61;
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: black;
+  font-size: 22px;
+  outline: none;
+}
+.btn:hover {
+  border-color: yellow;
+}
+#text {
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+/* pokedex */
+#pokedex {
+  background-image: url(/imagenes/pokedexpantalla1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 70%;
+  height: 90%;
+  margin-left: 5.5cm;
+  margin-top: 20px;
+  font-size: 12px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Oswald", sans-serif;
+}
+
+.pokemon-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  padding-top: 2cm;
+  margin-left: 120px;
+  width: 3cm;
+}
+
+.pokemon-block {
+  border-radius: 10px !important;
+  margin: 0px 30px;
+  width: 3cm !important;
+  height: 3.3cm !important;
+  color: black;
+  line-height: 10px;
+  margin-top: 0px;
+  background-image: url("/imagenes/pattern\ \(3\).svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5);
+}
+
+.pokemon-block p {
+  margin: 2px;
+}
+
+.name {
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+#spinner {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.pagination {
+  width: 80%;
+  margin-left: 4.3cm;
+  margin-bottom: 35px;
+  margin-top: 10px;
+}
+
+.card-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+#logoPokedex {
+  width: 100px;
+  position: fixed;
+  margin: 4px;
+  margin-left: 24px;
+  margin-top: 7px;
+  transition: all 0.35s ease;
+}
+
+#logoPokedex:hover {
+  transition: all 0.3s ease-in-out 0s;
+  -moz-transform: scale(1.1) rotate(73deg);
+  -webkit-transform: scale(1.1) rotate(73deg);
+  -o-transform: scale(1.1) rotate(73deg);
+  -ms-transform: scale(1.1) rotate(73deg);
+  transform: scale(1.1) rotate(73deg);
+}
+
+#bodyPokedex {
+  background-color: #e5e5f7;
+  opacity: 1;
+  background-image: linear-gradient(135deg, #ff69b4 25%, transparent 25%),
+    linear-gradient(225deg, #ff69b4 25%, transparent 25%),
+    linear-gradient(45deg, #ff69b4 25%, transparent 25%),
+    linear-gradient(315deg, #ff69b4 25%, #e5e5f7 25%);
+  background-position: 39px 0, 39px 0, 0 0, 0 0;
+  background-size: 78px 78px;
+  background-repeat: repeat;
+}
+
+#accedePokedex {
+  box-shadow: -5px -5px 10px #000000, 5px 5px 10px #262626;
+  background-color: white;
+  color: black;
+  padding: 5px 8px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  margin-left: 20cm;
+  border: 2px dashed #040505;
+  -webkit-border-radius: 150px;
+  -webkit-border-bottom-right-radius: 0;
+  -moz-border-radius: 150px;
+  -moz-border-radius-bottomright: 0;
+  border-radius: 150px;
+  border-bottom-right-radius: 0;
+  -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+  animation: heartbeat 1.5s ease-in-out infinite both;
+}
+
+@-webkit-keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+    transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+    transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}
+@keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+    transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+    transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}
